@@ -1,0 +1,2 @@
+# GoFirefox
+Firefox Profile Mangaer
