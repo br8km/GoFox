@@ -5,8 +5,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/br8km/GoFox/chameleon"
-	"github.com/br8km/GoFox/utils"
+	"github.com/br8km/gofox/chameleon"
+	"github.com/br8km/gofox/utils"
 	"github.com/goccy/go-json"
 )
 

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/br8km/GoFox/utils"
+	"github.com/br8km/gofox/utils"
 )
 
 type Asset struct {

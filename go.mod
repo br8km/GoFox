@@ -1,4 +1,4 @@
-module github.com/br8km/GoFox
+module github.com/br8km/gofox
 
 go 1.24.5
 
