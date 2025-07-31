@@ -1,0 +1,15 @@
+{
+  "policies": {
+    "NewTabPage": false,
+    "DisplayMenuBar": true,
+    "DisableFirefoxAccounts": true,
+    "NetworkPrediction": false,
+    "CaptivePortal": false,
+    "DNSOverHTTPS": {
+      "Enabled": false
+    },
+    "DisableFirefoxStudies": true,
+    "DisableTelemetry": true,
+    "DisablePocket": true
+  }
+}

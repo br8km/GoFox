@@ -1,0 +1,37 @@
+[
+	{
+		"Group": "group",
+		"Id": "id",
+		"DirProfile": "D:\\Documents\\Work\\Base\\DevKit\\GoFox\\test_data\\profiles\\group--id",
+		"Device": {
+			"Browser": {
+				"Family": "Firefox",
+				"Code": "ff"
+			},
+			"OS": {
+				"Family": "win",
+				"Code": "win3"
+			},
+			"Type": "desktop",
+			"Language": "en-US",
+			"ScreenSize": "1366x768"
+		},
+		"Location": {
+			"GeoAddr": {
+				"IPAddr": "1.2.3.4",
+				"Country": "",
+				"State": "",
+				"City": "",
+				"Timezone": ""
+			},
+			"Proxy": {
+				"Scheme": "http",
+				"Username": "usr",
+				"Password": "pwd",
+				"IPAddr": "1.2.3.4",
+				"Port": 8080,
+				"RDNS": true
+			}
+		}
+	}
+]

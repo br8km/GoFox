@@ -1,0 +1,3 @@
+http://username:password@ipaddr:port
+https://username:password@ipaddr:port
+socks5://username:password@ipaddr:port
