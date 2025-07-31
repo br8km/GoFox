@@ -8,18 +8,18 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/br8km/GoFox/firefox"
+	gofox "github.com/br8km/GoFox"
 	"github.com/br8km/GoFox/utils"
 )
 
 
-func InitConfig() firefox.Config {
+func InitConfig() gofox.Config {
 
-	c := firefox.NewConfig(
+	c := gofox.NewConfig(
 		true,
 		EXE_PATH,
 		"placeholder",
-		firefox.PROFILE_SEPERATOR,
+		gofox.PROFILE_SEPERATOR,
 	)
 	c.DirProfiles = filepath.Join(
 		c.DirRoot, 
@@ -37,7 +37,7 @@ func InitConfig() firefox.Config {
 func TestConfig(t *testing.T) {
 	// Passed @ 20250731
 
-	var c1, c2 firefox.Config
+	var c1, c2 gofox.Config
 	var ok bool
 	var err error
 
@@ -84,8 +84,8 @@ func TestConfig(t *testing.T) {
 func TestAsset(t *testing.T) {
 	// Passed @ 20250731
 
-	var c firefox.Config
-	var assets []firefox.Asset
+	var c gofox.Config
+	var assets []gofox.Asset
 
 	var ok bool
 	var err error
@@ -101,7 +101,7 @@ func TestAsset(t *testing.T) {
 	assert.True(t, ok)
 	assert.Nil(t, err)
 
-	assets = firefox.DefaultAssets(
+	assets = gofox.DefaultAssets(
 		filepath.Dir(c.ExePath),
 		dir_profile_demo,
 	)
@@ -116,13 +116,13 @@ func TestAsset(t *testing.T) {
 // test fingerprints
 // func TestFingerPrints(t *testing.T) {}
 
-func init_manager() firefox.FPManager {
+func init_manager() gofox.FPManager {
 	// Passed @ 20250731
 
-	var c firefox.Config
-	var assets []firefox.Asset
-	var fps []firefox.FingerPrint
-	var m firefox.FPManager
+	var c gofox.Config
+	var assets []gofox.Asset
+	var fps []gofox.FingerPrint
+	var m gofox.FPManager
 
 	c = InitConfig()
 
@@ -131,14 +131,14 @@ func init_manager() firefox.FPManager {
 	)
 	dir_profile_demo := filepath.Join(c.DirProfiles, TestDemoProfileName)
 
-	assets = firefox.DefaultAssets(
+	assets = gofox.DefaultAssets(
 		filepath.Dir(c.ExePath),
 		dir_profile_demo,
 	)
 
-	fps = []firefox.FingerPrint{}
+	fps = []gofox.FingerPrint{}
 
-	m = firefox.FPManager{
+	m = gofox.FPManager{
 		Config: c, 
 		Assets:  assets, 
 		FingerPrints: fps,
@@ -151,8 +151,8 @@ func init_manager() firefox.FPManager {
 	return m
 }
 
-func create_fp(m *firefox.FPManager) firefox.FingerPrint {
-	var fp firefox.FingerPrint
+func create_fp(m *gofox.FPManager) gofox.FingerPrint {
+	var fp gofox.FingerPrint
 	var err error
 
 	// create fp

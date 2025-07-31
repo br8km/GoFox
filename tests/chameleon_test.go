@@ -9,15 +9,15 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
+	gofox "github.com/br8km/GoFox"
 	"github.com/br8km/GoFox/chameleon"
-	"github.com/br8km/GoFox/firefox"
 )
 
 
 func TestChameleon(t *testing.T) {
 	// Passed @ 20250520
 
-	var c firefox.Config
+	var c gofox.Config
 	var cs chameleon.Settings
 
 	var ok bool
@@ -25,8 +25,7 @@ func TestChameleon(t *testing.T) {
 	var debug bool = true
 
 	assert.Equal(t, 1, 1)
-	// c = firefox.DefaultConfig(true)
-	c = firefox.NewConfig(debug, EXE_PATH, TestProfilesFolder, firefox.PROFILE_SEPERATOR)
+	c = gofox.NewConfig(debug, EXE_PATH, TestProfilesFolder, gofox.PROFILE_SEPERATOR)
 	c.DirProfiles = filepath.Join(
 		c.DirRoot,
 		TestFolder,
