@@ -10,11 +10,11 @@
 			},
 			"OS": {
 				"Family": "win",
-				"Code": "win3"
+				"Code": "win4"
 			},
 			"Type": "desktop",
 			"Language": "en-US",
-			"ScreenSize": "1366x768"
+			"ScreenSize": "2560x1600"
 		},
 		"Location": {
 			"GeoAddr": {

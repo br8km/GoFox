@@ -1,4 +1,4 @@
-package firefox
+package gofox
 
 import (
 	"fmt"

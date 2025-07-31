@@ -1,4 +1,4 @@
-package firefox
+package gofox
 
 import (
 	"fmt"
@@ -48,7 +48,7 @@ func NewConfig(
 	}
 
 	var _, b, _, _ = runtime.Caller(0)
-	root := filepath.Join(filepath.Dir(b), "../")
+	root := filepath.Join(filepath.Dir(b), "/")
 
 	return Config{
 		Debug:     debug,

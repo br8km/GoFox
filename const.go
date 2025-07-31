@@ -1,5 +1,4 @@
-package firefox
-
+package gofox
 var (
 	// profile folder: `{prefix}{seperator}{name}`
 	// profile folder: `{group}{seperator}{id}`
