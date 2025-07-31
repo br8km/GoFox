@@ -9,8 +9,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	gofox "github.com/br8km/GoFox"
-	"github.com/br8km/GoFox/chameleon"
+	"github.com/br8km/gofox"
+	"github.com/br8km/gofox/chameleon"
 )
 
 

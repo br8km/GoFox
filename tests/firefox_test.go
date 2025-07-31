@@ -8,8 +8,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	gofox "github.com/br8km/GoFox"
-	"github.com/br8km/GoFox/utils"
+	"github.com/br8km/gofox"
+	"github.com/br8km/gofox/utils"
 )
 
 
